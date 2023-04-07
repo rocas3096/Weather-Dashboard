@@ -18,15 +18,15 @@
         </div>
     </header>
 
-    <main>
-        <div class="container">
+    <main class="container">
+        <div class="container mx-0">
             <div class="row justify-content-start">
               <div class="col-12 col-md-3 col-lg-3">
                 <h3>Search</h3>
                 <form id="search-bar">
                   <div class="row py-3">
-                    <label for="search-bar" class="col-sm-4 col-form-label">Enter City Name</label>
-                    <div class="col-sm-8">
+                    <label class="col-sm-12 col-form-label">City:</label>
+                    <div class="col-8 col-sm-8">
                       <input type="text" class="form-control" id="city-name"/>
                     </div>
                   </div>
@@ -38,12 +38,39 @@
                 </form>
                 <ul class="list-group" id="previously-searched"></ul>
               </div>
+              <div class="col 12 col-md-9 col-lg-9" >
+                <div class="card">
+                    <div class="row">
+                    <div class="col-4 col-md-4">
+                      <div class="card-body">
+                        <h5 class="card-title" id="City-date">Chicago (4/8/2023)</h5>
+                        <p class="card-text">Temp: 76.2F</p>
+                        <p class="card-text">Wind: 8.43MPH</p>
+                        <p class="card-text">Humiditiy: 44%</p>
+                        <button class="btn btn-success">Refresh</button>
+                      </div>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <img src="./assets/placeholder-400.png" alt="The placeholder image helps demonstrate this card component"
+                          class="card-img">
+                    </div>
+                  </div>
+                </div>
+            </div>
             </div>
             </div>
         </div>
-        
-       
-          
+
+        <!--  <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-3 col-lg-3">
+                    <ul class="list-group" id="previously-searched"></ul>
+                </div>
+            </div>
+        </div> -->
+
+      
+
     </main>
 </body>
 </html>
