@@ -1,0 +1,19 @@
+body {
+    background-image: url(https://source.unsplash.com/random?lanscape);
+    background-size: cover;
+}
+
+.card {
+    opacity: 0.7;
+    background-color: black;
+    color: white;
+}
+
+section:first-of-type {
+    margin-bottom: 50px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
