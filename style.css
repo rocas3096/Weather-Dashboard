@@ -9,6 +9,12 @@ body {
     color: white;
 }
 
+.col-12.col-md-2.col-lg-2 {
+    background: black;
+    color: white;
+    opacity: .7;
+}
+
 section:first-of-type {
     margin-bottom: 50px;
 }
@@ -16,4 +22,8 @@ section:first-of-type {
 .flex {
     display: flex;
     align-items: center;
+}
+
+.card.loading {
+    visibility: hidden;
 }

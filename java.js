@@ -9,6 +9,7 @@ let weather = {
         )
         .then((response) => response.json())
         .then((data) => this.displayWeather(data))
+        .catch((error) => console.error(error));
     },
     displayWeather : function(data) {
         const { name } = data.city;
@@ -30,7 +31,22 @@ let weather = {
         document.querySelector(".temp").innerText = roundedTemp + " °F";
         document.querySelector(".humidity").innerText = "Humiditiy: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + "MPH";
+        document.querySelector(".card").classList.remove("loading");
+    },
+    search: function () {
+        this.fetchWeather(document.querySelector(".form-control").value);
     }
+    
 };
 
+document.querySelector('button[type="submit"]').addEventListener("click", function() {
+    weather.search();
+});
 
+document.querySelector(".form-control").addEventListener("keyup", function(event){
+    if (event.key == "Enter") {
+        weather.search();
+    }
+})
+
+weather.fetchWeather("Chicago");
