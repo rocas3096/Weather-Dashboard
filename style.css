@@ -1,8 +1,29 @@
+/* styling to add a background image */
 body {
     background-image: url(https://source.unsplash.com/random?lanscape);
     background-size: cover;
 }
 
+/* styling to change certain header colors */
+h3 {
+    background: #0a58ca;
+    color: white;
+    opacity: .7;
+}
+
+/* styling to remove unordered list default styling */
+ul.list-group.search-history {
+    list-style: none;
+}
+
+/* styling to add borders around items in unordered list */
+li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling to make main weather card a certain color and opaque */
 .card {
     opacity: 0.7;
     background-color: black;
@@ -10,21 +31,25 @@ body {
     
 }
 
+/* Same as above but for the 5 day forcast and search form */
 .col-12.col-md-2.col-lg-2 {
     background: black;
     color: white;
     opacity: .7;
 }
 
+/* gives the forcast of today a bottom margin */
 section:first-of-type {
     margin-bottom: 50px;
 }
 
+/* stlyes items with the class of flex so that their text is centered and flexes to the next row when the card is compressed */
 .flex {
     display: flex;
     align-items: center;
 }
 
+/* hides card before default search loads to avoid displaying default data that is there to be a placeholder to guide those looking at the code, not to provide any function to user  */
 .card.loading {
     visibility: hidden;
 }
