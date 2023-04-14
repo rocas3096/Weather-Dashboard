@@ -2,7 +2,7 @@
 
 ## Description
 
-I made this weather dashboard to learn about api calls and implementing them in conjunction with my skills in css javascript and html. It also gave me a nice tool for predicting the weather in my daily life. I learned how to use jquery to create functions, call information from third party apis, use templetes from preset websites such as bootstrap, and call on parents siblings and other attributes of my html within my jquery for future manipulation.
+I made this weather dashboard to learn about api calls and implementing them in conjunction with my skills in css javascript and html. It also gave me a nice tool for predicting the weather in my daily life. I learned how to use call information from apis, use templetes from preset websites such as bootstrap, and call on parents siblings and other attributes of my html within my javascript for future manipulation.
 
 ## Installation
 
